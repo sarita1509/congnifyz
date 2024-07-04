@@ -1,0 +1,102 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav {
+    position: relative;
+  }
+  
+  nav .menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  nav .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav .nav-menu li {
+    margin-left: 20px;
+  }
+  
+  nav .nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  main {
+    padding: 20px 0;
+  }
+  
+  main section {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  
+    nav .menu-icon {
+      display: block;
+    }
+  
+    nav .nav-menu {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      right: 0;
+      top: 100%;
+      width: 100%;
+      z-index: 1;
+    }
+  
+    nav .nav-menu li {
+      margin: 0;
+      text-align: center;
+    }
+  
+    nav .nav-menu a {
+      padding: 10px;
+      border-bottom: 1px solid #444;
+    }
+  
+    #menu-toggle:checked + .menu-icon + .nav-menu {
+      display: flex;
+    }
+  }
+  

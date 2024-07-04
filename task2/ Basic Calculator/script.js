@@ -5,3 +5,4 @@ document.getElementById('calculateButton').addEventListener('click', function() 
 
     document.getElementById('result').textContent = `Result: ${result}`;
 });
+
